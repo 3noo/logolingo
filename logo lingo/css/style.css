@@ -2,9 +2,9 @@
 body {
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
-  line-height: 24px;
-  font-size: 16px;
-  color: #818181;
+  line-height: 1.6;
+  font-size: 17px;
+  color: #444;
 }
 
 figure,
@@ -52,7 +52,7 @@ a:focus,
 h1,
 h2{
   font-family: 'Tsukimi Rounded', sans-serif;
-  font-size: 50px;
+  font-size: 48px;
 }
 h3,
 h4,
@@ -66,10 +66,11 @@ h6,
 .h6 {
   font-family: "Optima", sans-serif;
   color: #252525;
+  font-size: 22px;
 }
 
 p {
-  font-size: 15px;
+  font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
