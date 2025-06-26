@@ -14,7 +14,7 @@ address {
 }
 .map-wrapper {
   position: relative;
-  padding-bottom: 75%; 
+  padding-bottom: 40%; 
   height: 0;
   overflow: hidden;
 }
@@ -213,56 +213,25 @@ main > section {
   z-index: 9999;
 }
 
-/*Battery*/
-.loder-box {
-  background-color: rgba(0, 0, 0, 0.02);
-  border-radius: 1px;
-  height: 100px;
-  left: 50%;
-  margin-left: -64px;
-  margin-top: -50px;
+/* Preloader Logo */
+.preloader-logo {
   position: absolute;
   top: 50%;
-  width: 128px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  animation: pulse 1.5s infinite alternate;
 }
 
-.battery {
-  width: 60px;
-  height: 25px;
-  top: 35%;
-  border: 1px #2e2e2e solid;
-  border-radius: 2px;
-  position: relative;
-  -webkit-animation: charge 5s linear infinite;
-  animation: charge 5s linear infinite;
-  margin: 0 auto;
-}
-
-.battery:after {
-  background-color: #2e2e2e;
-  border-radius: 0 1px 1px 0;
-  content: "";
-  height: 10px;
-  position: absolute;
-  right: -5px;
-  top: 7px;
-  width: 3px;
-}
-
-@-webkit-keyframes charge {
+@keyframes pulse {
   0% {
-    box-shadow: inset 0px 0px 0px #2e2e2e;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
   }
   100% {
-    box-shadow: inset 60px 0px 0px #2e2e2e;
-  }
-}
-@keyframes charge {
-  0% {
-    box-shadow: inset 0px 0px 0px #2e2e2e;
-  }
-  100% {
-    box-shadow: inset 60px 0px 0px #2e2e2e;
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.8;
   }
 }
 /**
